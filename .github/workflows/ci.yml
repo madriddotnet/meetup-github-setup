@@ -26,5 +26,3 @@ jobs:
       run: dotnet test ./tests/UnitTests/UnitTests.csproj -c $BUILD_CONFIG --no-build  
     - name: dotnet pack [Awesome library]
       run: dotnet pack ./src/AwesomeLibrary/AwesomeLibray.csproj -c $BUILD_CONFIG --no-build --include-source --include-symbols --version-suffix $VERSION_SUFFIX 
-	
-	
