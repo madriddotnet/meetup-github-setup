@@ -4,5 +4,25 @@
         <Authors>MadridDotNet</Authors>
         <Company>MadridDotNet</Company>
         <LangVersion>preview</LangVersion>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/madriddotnet/meetup-github-setup</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/madriddotnet/meetup-github-setup</RepositoryUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>true;</AllowedOutputExtensionsInPackageBuildOutputFolder>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <SourceRoot Include="$(MSBuildThisFileDirectory)/"/>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 </Project>

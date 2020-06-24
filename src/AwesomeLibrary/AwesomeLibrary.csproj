@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>$(NetStandardVersion)</TargetFramework>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Description>This is the description for the awesome library.</Description>
   </PropertyGroup>
 
 </Project>
