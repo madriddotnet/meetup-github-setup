@@ -1,0 +1,8 @@
+<Project>
+    <Import Project="build/dependencies.props"/>
+    <PropertyGroup Label="Default Metadata">
+        <Authors>MadridDotNet</Authors>
+        <Company>MadridDotNet</Company>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+</Project>
